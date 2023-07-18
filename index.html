@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie - Movie</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <span>Margot Robbie</span>
+            <span>Ryan Gosling</span>
+        </section>
+
+        <section class="phrase">
+            <h2>Ela é tudo.</h2>
+            <h2>Ele é só o Ken.</h2>
+        </section>
+
+        <section class="info">
+            <div class="cine">
+                <p>20 de Julho</p>
+                <p>Somente nos cinemas</p>
+            </div>
+
+            <div class="social">
+                <i class="ph-duotone ph-tiktok-logo"></i>
+                <i class="ph-duotone ph-instagram-logo"></i>
+                <i class="ph-duotone ph-facebook-logo"></i>
+                <i class="ph-duotone ph-twitter-logo"></i>
+            </div>
+
+
+            <section class="buttons">
+                <button>
+                    <a href="https://google.com/search?q=barbie" target="_blank"> Compre seu ingresso</a>
+                </button>
+                <button id="openModalBtn">
+                        Assista ao trailer
+                </button>
+            </section>
+
+            <div id="modalContainer">
+              <div class="modalContent">
+                <iframe id="youtubeIframe" width="1280" height="720"
+                src="https://www.youtube.com/embed/Ujs1Ud7k49M?controls=0" frameborder="0" allowfullscreen>
+            </iframe>
+              </div>
+            </div>
+
+
+        <div class="play">
+
+            <audio id="music" loop>
+                <source src="./assets/audio/barbie.mp3" type="audio/mpeg">
+            </audio>
+
+            <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+            <i class="ph-duotone ph-speaker-slash"></i>
+
+            <img src="./assets/img/warner-logo.svg" alt="warner">
+        </div>
+        <footer>
+            <p>Katianne Araújo &copy; 2023.</p>
+          </footer>
+        
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
