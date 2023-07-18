@@ -241,4 +241,9 @@ footer {
   .ph-speaker-slash {
     font-size: 20px;
   }
+
+  iframe {
+    width: 340px;
+    height: 300px;
+  }
 }
